@@ -1,0 +1,179 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="icon/css/all.min.css">
+
+      <!-- Import Settingan CSS Pribadi -->
+      <link rel="stylesheet" href="css/style.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+
+
+
+    <body id="body">
+
+      <!-- Kontainer pembungkus judul web dan livescore -->
+      <div class="container">
+
+        <div class="row">
+          <div class="col s12 center-align">
+
+              <!-- Judul -->
+            <div id="titler">
+              <h1>Simple Janken-App</h1>
+              <hr>
+            </div>
+
+              <!-- LiveScore Tersembunyi -->
+              <div class="amaterasu" id="amaterasu">
+                <h2>LiveScore</h2>
+
+                <div id="counter" class="counter purple darken-4 white-text">
+                    <div id="you" class="style-livescore purple accent-1">You</div>
+                    <div id="comp" class="style-livescore purple accent-1">Computer</div>
+                    <span id="uscore">0</span>:<span id="cscore">0</span>
+                </div>
+              </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+<!-- Judul tiap sisi -->
+  <section id="titlebar">
+      <div class="row">
+        <div class="col s5 center-align">
+          <h3>You</h3>
+        </div>
+        <div class="col s2 center-align">
+          <div class="notify" id="notify"><h5><i>Pick a card...</i></h5>
+          </div>
+        </div>
+        <div class="col s5 center-align">
+          <h3>Computer</h3>
+        </div>
+      </div>
+  </section>
+
+<!-- Section untuk User Interface -->
+  <section id="janken">
+    <div class="row">
+      <div class="col s5 center-align">
+        <div class="row">
+
+            <div class="card red waves-effect lighten-1" id="pp">
+              <div class="card-content white-text">
+                <span class="card-title">Paper</span>
+                <br>
+                <span class="fa fa-hand-paper responsive-img"></span>
+              </div>
+            </div>
+
+            <div class="card blue waves-effect lighten-1" id="ps">
+              <div class="card-content white-text">
+                <span class="card-title">Scissor</span>
+                <br>
+                <span class="fa fa-hand-scissors"></span>
+              </div>
+            </div>
+
+            <div class="card yellow waves-effect darken-3" id="pr">
+              <div class="card-content white-text">
+                <span class="card-title">Rock</span>
+                <br>
+                <span class="fa fa-hand-rock"></span>
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+<!-- Hasil dari suit -->
+  <section id="hasil-turn">
+      <div class="col s2 center-align">
+         <h2 id="hasil"><b>VS</b></h2>
+      </div>
+  </section>
+
+<!-- Tampilan sisi komputer -->
+<section id="computer-interface">
+
+      <div class="col s5 center-align">
+        <div class="row">
+
+            <div class="card red lighten-1 waves-effect" id="cp">
+              <div class="card-content white-text">
+                <span class="card-title">Paper</span>
+                <br>
+                <span class="fa fa-hand-paper" ></span>
+              </div>
+            </div>
+
+            <div class="card blue lighten-1 waves-effect" id="cs">
+              <div class="card-content white-text">
+                <span class="card-title">Scissor</span>
+                <br>
+                <span class="fa fa-hand-scissors" ></span>
+              </div>
+            </div>
+     
+            <div class="card yellow darken-3 waves-effect" id="cr">
+              <div class="card-content white-text">
+                <span class="card-title">Rock</span>
+                <br>
+                <span class="fa fa-hand-rock" ></span>
+              </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+<!-- Section untuk tombol New Game dan Play -->
+  <section id="tombol">
+    <div class="row">
+      <div class="col s12 center-align">
+        <center>
+          <div class="bungkustombol" id="bungkustombol">
+            <a onclick="location.reload();" class="waves-effect waves-light btn-large" id="newgame"><b>New Game</b></a>
+          </div>
+          <a class="waves-effect waves-light btn-large" onclick="play();" id="play"><b>Play</b></a>
+        </center>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <!-- Import JavaScript Framework -->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+
+      <!-- Import JavaScript Pribadi -->
+      <script type="text/javascript" src="js/script.js"></script>
+
+
+
+
+
+
+    </body>
+  </html>
+        
