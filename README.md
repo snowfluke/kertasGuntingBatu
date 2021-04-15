@@ -1,4 +1,4 @@
-# kertas-gunting-batu-html
-Membuat game sederhana kertas gunting batu dengan MaterializeCSS dan JQuery
-# rock-paper-scissor-html-game
-Create a simple rock-paper-scissor game using MaterializeCSS and JQuery
+# kertasGuntingBatu
+Game sederhana kertas gunting batu sederhana dengan MaterializeCSS dan JQuery
+# Demo
+[kertasGuntingBatu](https://snowfluke.github.io/kertasGuntingBatu/)
